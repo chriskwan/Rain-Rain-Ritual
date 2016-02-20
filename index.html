@@ -1,12 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Rain Rain Ritual</title>
@@ -15,39 +9,26 @@
     <script src="TemplateData/UnityProgress.js"></script>
   </head>
   <body class="template">
-    <section class="page-header">
-      <h1 class="project-name">Rain-rain-ritual</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/chriskwan/Rain-Rain-Ritual" class="btn">View on GitHub</a>
-      <a href="https://github.com/chriskwan/Rain-Rain-Ritual/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/chriskwan/Rain-Rain-Ritual/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <p class="header"><span>Unity WebGL Player | </span>Rain Rain Ritual</p>
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+      <br>
+      <div class="logo"></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">Rain Rain Ritual</div>
+    </div>
+    <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/Build-2016-02-20.data",
+    codeUrl: "Release/Build-2016-02-20.js",
+    memUrl: "Release/Build-2016-02-20.mem",
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
 
-    <section class="main-content">
-
-      <p class="header"><span>Unity WebGL Player | </span>Rain Rain Ritual</p>
-      <div class="template-wrap clear">
-        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-        <br>
-        <div class="logo"></div>
-        <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-        <div class="title">Rain Rain Ritual</div>
-      </div>
-      <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
-      <script type='text/javascript'>
-    var Module = {
-      TOTAL_MEMORY: 268435456,
-      errorhandler: null,     // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-      compatibilitycheck: null,
-      dataUrl: "Release/RRR-WebGL.data",
-      codeUrl: "Release/RRR-WebGL.js",
-      memUrl: "Release/RRR-WebGL.mem",
-    };
-  </script>
-  <script src="Release/UnityLoader.js"></script>
-
-    </section>
-
-  
   </body>
 </html>
